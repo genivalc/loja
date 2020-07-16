@@ -4,7 +4,9 @@ import 'package:provider/provider.dart';
 import 'package:shoping/blocs/home.bloc.dart';
 import 'package:shoping/models/category-list-item.model.dart';
 
-import '../../../settings.dart';
+import '../../../../settings.dart';
+
+
 
 
 class CategoryCard extends StatelessWidget {

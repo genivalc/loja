@@ -3,7 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:shoping/models/category-list-item.model.dart';
-import 'package:shoping/ui/widgets/shared/loader.widget.dart';
+import 'package:shoping/ui/shared/widgets/shared/loader.widget.dart';
+
 
 import 'category-card.widget.dart';
 

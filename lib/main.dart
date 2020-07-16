@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shoping/ui/android/pages/tabs.page.dart';
 
+import 'blocs/cart.bloc.dart';
 import 'blocs/home.bloc.dart';
+import 'blocs/theme.bloc.dart';
+import 'blocs/user.bloc.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,15 +17,15 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<HomeBloc>.value(
           value: HomeBloc(),
         ),
-        // ChangeNotifierProvider<CartBloc>.value(
-        //   value: CartBloc(),
-        // ),
-        // ChangeNotifierProvider<UserBloc>.value(
-        //   value: UserBloc(),
-        // ),
-        // ChangeNotifierProvider<ThemeBloc>.value(
-        //   value: ThemeBloc(),
-        // ),
+         ChangeNotifierProvider<CartBloc>.value(
+           value: CartBloc(),
+         ),
+        ChangeNotifierProvider<UserBloc>.value(
+          value: UserBloc(),
+        ),
+        ChangeNotifierProvider<ThemeBloc>.value(
+          value: ThemeBloc(),
+        ),
       ],
       child: Main(),
     );
